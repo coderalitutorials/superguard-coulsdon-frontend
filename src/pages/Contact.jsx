@@ -2840,7 +2840,7 @@ export default function Contact() {
     const loadingToast = toast.loading("Sending your enquiry...");
 
     try {
-      await axios.post("http://localhost:5000/api/contact", {
+      await axios.post("https://superguard-coulsdon-backend.vercel.app/api/contact", {
         ...formData,
         area: LOCAL.area,
         business: LOCAL.company,
